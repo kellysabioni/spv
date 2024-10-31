@@ -100,7 +100,7 @@ h2 .logo {
     position: absolute;
     top: 0;
     text-align: center;
-    background-image: url('/imagens/bg-04.jpg');
+    background-image: url('../imagens/bg-04.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 250px;
