@@ -35,16 +35,61 @@
     </header>
 <main>
               <article class="dados-contato">
-                <h2 class="titulo-pagina" >Como nos encontrar?</h2>
+                <h2 class="titulo-pagina">Fale Conosco</h2>
+ 
+                <p>Se você tem dúvidas ou precisa de mais informações sobre nossos serviços, preencha o formulário abaixo.</p>
+                <p>Escolha os serviços de seu interesse e nos conte como podemos ajudar. Estamos prontos para ouvir você!</p>
+                <p>Aguardamos seu contato!</p>
+ 
+                <form autocomplete="off" action="" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input required type="text" name="nome" id="nome" placeholder="Digite o nome completo">
+                    </div>
+ 
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+ 
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input required type="email" name="email" id="email">
+                    </div>
+   
+                    <div>
+                        <label for="assunto">Serviços:</label>
+                        <select name="assunto" id="assunto">
+                            <!-- Sempre deixe um option vazio para que o usuário escolha por conta própria. -->
+                            <option value=""></option>
+                            <option>Laudo para transferência</option>
+                            <option>Vistoria de 2 via de placa</option>
+                            <option>Vistoria de 2 via de documento</option>
+                            <option>Alteração de característica</option>
+                            <option>Vistoria cautelar completa</option>
+                            <option>Revitalização de chassi</option>
+                        </select>
+                    </div>
+   
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+   
+                        <!-- Sempre inicie e termine o textarea na mesma linha -->
+                        <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Enviar dados</button>
+                </form>
 
-                <h3>Estamos localizados na:</h3>
+                <div class="localizacao">
+                <div class="endereco">
+                    <h3>Estamos localizados na:</h3>
 
                 <p>Av. Cangaiba, 959 (em frente ao cartório)</p>
 
                 <h3>Horário de atendimento</h3>
                 <p>Segunda a sexta: 08:00 às 18:00</p>
                 <p>Sábado: 08:00 às 12:00</p>
-
+            
                 <div class="telefones">
                     <h3>
                         Telefones para contato:
@@ -66,12 +111,14 @@
                         <a href="https://wa.me/5511947437525"> 11 94743-7525</a>
                     </p>
                 </div>
+            </div>
                 <div class="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.6638179473357!2d-46.545426942043946!3d-23.511438156214904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fb1e57a05c5%3A0x2173979ca99ab8b7!2sAv.%20Canga%C3%ADba%2C%20959%20-%20Cangaiba%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003713-000!5e1!3m2!1spt-BR!2sbr!4v1729495901244!5m2!1spt-BR!2sbr"
                         height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </div>
             </article>
         
     </main>

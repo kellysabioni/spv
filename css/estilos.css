@@ -35,6 +35,16 @@ body{
 }
 ul { list-style-type: none;}
 a  {text-decoration: none;}
+blockquote {
+    color: var(--cor-vermelho-escuro);
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+    font-weight: 700;
+   
+    border-style: ridge;
+    padding: 10px;
+}
 /* Topo fixo INDEX*/
 .topo-index {
     padding-top: 15px;
@@ -57,13 +67,13 @@ a  {text-decoration: none;}
     text-align: center;
 }
 /* Mudança do background de transparente para branco e troca do logo */
-.topo-scrolled {background-color: var(--cor-clara2); }
+.topo-scrolled {background-color: var(--cor-clara); }
   
 .topo-scrolled .logo{content: url(../imagens/logo-principal.png) ;}
 
-.topo-scrolled .menu-topo a{color: var(--cor-vermelho-intermediario);}
+.topo-scrolled .menu-topo a{color: var(--cor-vermelho-claro);}
 .topo-scrolled .menu-topo a:hover {
-    color: var(--cor-vermelho-intermediario2);
+    color: var(--cor-vermelho-claro2);
     border-radius: 8px;
     padding: 2px;
 }   
@@ -91,7 +101,7 @@ h2 .logo {
 }
 .menu-topo a:hover {
     background-color: #ffffffbb;
-    color: var(--cor-vermelho-escuro);
+    color: var(--cor-vermelho-claro);
     border-radius: 8px;
     padding: 5px;
 }
@@ -121,7 +131,7 @@ h2 .logo {
 /* Conteudo OUTRAS páginas */
 .container{
     margin: 0 auto;
-    padding: 20px 10px 20px 10px;;
+    padding:  0px 20px 20px 20px;
 }
 /* Texto principal */
 .conteudo{
@@ -130,6 +140,7 @@ h2 .logo {
     padding-bottom: 20px;
 }
 .titulo-pagina {
+        padding-top: 10px;
         padding-bottom: 10px;
         line-height: 120%;
         font-size: 1.7rem;
@@ -165,28 +176,6 @@ h2 .logo {
     justify-content: center;
     margin: 0 auto;
 }
-/* .destaques {
-    background-color: var(--cor-escura2);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-}
-.destaque-conteudo {
-    border: var(--cor-intermediaria2) solid 1px;
-    border-radius: 8px;
-    background-color: var(--cor-clara);
-    padding: 10px;
-    width: 95%;
-    max-width: 350px;
-    display: flex;
-    justify-content: center;
-} */
 .icone-dest{
     display: flex;
     justify-content: center;
@@ -214,18 +203,35 @@ h2 .logo {
     text-align: left;
 }
 /* Estilos gerais */
-.depoimento-container {
-    /* width: 80%; */
+.container-quem-somos{
     margin: 0 auto;
-    padding-top: 20px;
-    text-align: center;
+    padding-bottom: 10px;
+    max-width: 1044px;
 }
-.depoimento-banner {
+.ul-quem-somos{
+    margin-top: 15px;
+}
+.ul-quem-somos li {
+    margin: 10px 20px;
+    width: 80%;
+    align-items: center;
+}
+.container-quem-somos h3 {
+    margin: 0 auto;
     background: linear-gradient(153deg, rgba(115,2,2,1) 0%, rgba(166,3,3,1) 35%, rgba(77,0,0,1) 100%);
+    padding: 15px;
+    border-radius: 0px 15px 0px 15px;
+    color: var(--cor-clara);
+    margin-top: 15px;
+}
+.depoimento-banner{
+    background: linear-gradient(153deg, rgba(115,2,2,1) 0%, rgba(166,3,3,1) 35%, rgba(77,0,0,1) 100%);
+    margin: 0 auto;
+    text-align: center;
     padding-bottom: 3rem;
     font-size: 2rem;
-    color: #333;
     width: 100vw;
+    max-width: 1044px;
     line-height: 130%;
     color: var(--cor-clara2);
     padding: 10px 20px 1px 20px;
@@ -233,28 +239,29 @@ h2 .logo {
 }
 /* Container para alinhar os depoimentos lado a lado */
 .depoimento-container > div {
-    width: 90vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
     margin-top: -35px;
-    margin-bottom: 15px;
-    max-width: 320px;
-}  
+    margin-bottom: 10px;
+   
+}
 /* Estilo individual de cada depoimento */
 .depoimento-container > div > div {
     background-color: var(--cor-clara2);
     padding: 20px;
     border-radius: 8px;
-    width: 45%;
+    width: 43%;
+    margin: 0 auto;
     box-shadow: 0px 4px 6px rgb(99, 98, 98);
 }
 /* LOCALIZAÇAO E DADOS CONTATO */
 .dados-contato {
-    max-width: 800px;
+    max-width: 1044px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
 }
 
 .dados-contato h3 {margin-top: 5px;}
@@ -288,7 +295,7 @@ iframe{
 /* Footer */
 footer {
     background-color: #121212; 
-    color: var(--cor-vermelho-escuro2); 
+    color: var(--cor-vermelho-claro); 
     padding-top: 15px;
 }
 footer h2 {text-align: center;}
@@ -326,20 +333,21 @@ footer h2 {text-align: center;}
     filter: grayscale(200%) brightness(150%);
 }
 .telefones p a{
-    color: var(--cor-vermelho-escuro2);
+    color: var(--cor-vermelho-claro);
     align-items: center;}
 .telefones p a:hover {
     color: var(--cor-vermelho-claro);
+    text-decoration: underline;
 }
 /* Estilizando o menu do footer */
 .menu-footer {
     text-align: right;
     width: 40%; 
 }
-.menu-footer ul{border-left: 1px solid var(--cor-vermelho-mais-escuro2);}
+.menu-footer ul{border-left: 1px solid var(--cor-vermelho-claro);}
 .menu-footer a {
     font-size: .9rem;
-    color: var(--cor-vermelho-escuro2); /* Links em branco */
+    color: var(--cor-vermelho-claro); /* Links em branco */
 }
 .menu-footer a:hover {
     color: var(--cor-vermelho-claro);
@@ -347,7 +355,7 @@ footer h2 {text-align: center;}
 }
 /* ESTILIZAÇÃO PÁGINA DÚVIDAS */
 .duvidas-container{
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
 }
 
 details {
@@ -417,12 +425,67 @@ details[open] summary::after {
     animation-range: entry 0% cover 30%;
 }
 
-@media (min-width: 760px) {
+
+/* FORMULARIO */
+form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 500px;
+    margin: auto;  
+}
  
-    .duvidas-container {
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-vermelho-mais-escuro2);
+}
+ 
+form div {
+    margin-bottom: 1rem;
+}
+ 
+input, select, textarea {
+    outline: none;
+    width: 100%;
+    padding: 6px;
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid var(--cor-vermelho-intermediario2);
+}
+ 
+input:focus {border-color: var(--cor-vermelho-claro);}
+ 
+option {font-size: 14px;}
+ 
+textarea {height: auto;}
+@media (min-width: 760px) {
+    .depoimento-container > div > div  {
+        width: 30%;
+        max-width: 250px;
+    }
+    .container-quem-somos{
+        max-width: 1044px;
+    }
+
+    .localizacao{
         display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .localizacao .mapa{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .duvidas-container {
+        
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
+        max-width: 1044px;
+        margin: 0 auto;
+        /* align-items: center; */
     }
  
     .coluna {
