@@ -1,0 +1,43 @@
+Tentativa de fazer um carrossel com depoimentos 
+
+****JS*****
+const swiper = new Swiper('.swiper-container', {
+    // Configurações do Swiper
+    loop: true, // Permite que o carrossel continue girando em loop
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000, // Tempo entre os slides em milissegundos
+      disableOnInteraction: false, // Continua o autoplay mesmo após interação
+    },
+  });
+  
+
+  ****CSS*****
+  .swiper-container {
+    width: 100%;
+    max-width: 600px; /* Ajuste para o tamanho desejado */
+    margin: auto;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333; /* Cor dos botões de navegação */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #007bff; /* Cor da paginação ativa */
+  }
+  
