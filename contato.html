@@ -35,52 +35,53 @@
         </nav>
     </header>
 <main>
-              <article class="dados-contato">
-                <h2 class="titulo-pagina">Fale Conosco</h2>
- 
-                <p>Se você tem dúvidas ou precisa de mais informações sobre nossos serviços, preencha o formulário abaixo.</p>
-                <p>Escolha os serviços de seu interesse e nos conte como podemos ajudar. Estamos prontos para ouvir você!</p>
-                <p><b> Aguardamos seu contato! </b></p>
- 
-                <form autocomplete="off" action="" method="post">
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input required type="text" name="nome" id="nome" placeholder="Digite o nome completo">
-                    </div>
- 
-                    <div>
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" name="telefone" id="telefone">
-                    </div>
- 
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input required type="email" name="email" id="email">
-                    </div>
-   
-                    <div>
-                        <label for="assunto">Serviços:</label>
-                        <select name="assunto" id="assunto">
-                            <!-- Sempre deixe um option vazio para que o usuário escolha por conta própria. -->
-                            <option value=""></option>
-                            <option>Laudo para transferência</option>
-                            <option>Segunda via de placa</option>
-                            <option>Segunda via de documento</option>
-                            <option>Alteração de característica</option>
-                            <option>Vistoria cautelar completa</option>
-                            <option>Vistoria sinistro</option>
-                            <option>Revitalização de chassi</option>
-                        </select>
-                    </div>
-   
-                    <div>
-                        <label for="mensagem">Mensagem:</label>
-   
-                        <!-- Sempre inicie e termine o textarea na mesma linha -->
-                        <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
+    <article class="dados-contato">
+        <h2 class="titulo-pagina">Fale Conosco</h2>
+
+        <p>Se você tem dúvidas ou precisa de mais informações sobre nossos serviços, preencha o formulário abaixo.</p>
+        <p>Escolha os serviços de seu interesse e nos conte como podemos ajudar. Estamos prontos para ouvir você!</p>
+        <p><b> Aguardamos seu contato! </b></p>
+
+        <form autocomplete="off" action="https://formspree.io/f/myzyeeba" method="post" id="form">
+            <div>
+                <label for="nome">Nome:</label>
+                <input required type="text" name="nome" id="nome" placeholder="Digite o nome completo">
+            </div>
+
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(11) 00000-0000">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input required type="email" name="email" id="email" placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div>
+                <label for="assunto">Serviços:</label>
+                <select name="assunto" id="assunto">
+                    <!-- Sempre deixe um option vazio para que o usuário escolha por conta própria. -->
+                    <option value=""></option>
+                    <option>Laudo para transferência</option>
+                    <option>Vistoria de 2 via de placa</option>
+                    <option>Vistoria de 2 via de documento</option>
+                    <option>Alteração de característica</option>
+                    <option>Vistoria cautelar completa</option>
+                    <option>Vistoria sinistro</option>
+                    <option>Revitalização de chassi</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+
+                <!-- Sempre inicie e termine o textarea na mesma linha -->
+                <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <p id="my-form-status"></p>
+        </form>
 
                 <div class="localizacao">
                 <div class="endereco">
